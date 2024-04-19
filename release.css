@@ -1,0 +1,57 @@
+.client{
+    width: 50px;
+    height: 20px;
+    background-color: #001e8a;
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: none;
+}
+.dashboard {
+	width: 700px;
+	height: 500px;
+	opacity: 0.9;
+	background-image: url("https://i.postimg.cc/brNTPXdS/vonti-bot-background.png");
+    background-size: 700px 500px;
+    border: 3px solid black;
+}
+
+.buttonTopBar{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.mainButton {
+  background-color: #001e8a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.mainButton:hover {
+  background-color: #45a049;
+}
+
+.mainContent{
+    width: 90%;
+    height: 75%;
+    display: none;
+    margin: auto;
+    background-color: #0b0b0b;
+    border: 2px solid #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
