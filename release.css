@@ -1,16 +1,78 @@
-.client-start-button{
-    width: 50px;
-    height: 20px;
-    background-color: #001e8a;
-    border: 2px solid black;
-    color: white;
-    text-align: center;
+.client-switch {
+    position: relative;
     display: inline-block;
-    font-size: 16px;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .client-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .client-slider {
+    position: absolute;
     cursor: pointer;
-    border-radius: 8px;
-    display: none;
-}
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .client-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .client-slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .client-slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .client-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .client-slider.client-round {
+    border-radius: 34px;
+  }
+  
+  .client-slider.client-round:before {
+    border-radius: 50%;
+  }
+
+  .client-toggle-button-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    justify-content: end;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* width: 100%; */
+    width: 160px;
+  }
+
+  .client-toggle-button-title{
+    margin-right: 10px;
+  }
 .client-dashboard {
 	width: 700px;
 	height: 500px;
@@ -21,7 +83,7 @@
 }
 
 .client-dashboard-buttons{
-    margin: 20px;
+    margin: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; 
@@ -46,12 +108,34 @@
 }
 
 .client-dashboard-content{
-    width: 90%;
-    height: 75%;
+    width: 95%;
+    height: 80%;
     display: none;
     margin: auto;
-    background-color: #0b0b0b;
+    background-image: url('https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg');
     border: 2px solid #1b1b1b;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.client-client-sidebar{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.client-start-button{
+    width: 90px;
+    height: 20px;
+    background-color: #001e8a;
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    /* display: none; */
 }
