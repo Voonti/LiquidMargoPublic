@@ -72,6 +72,8 @@
 
   .client-toggle-button-title{
     margin-right: 10px;
+    color:white;
+    outline: #2196F3;
   }
 .client-dashboard {
 	width: 700px;
