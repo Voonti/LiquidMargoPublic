@@ -76,8 +76,8 @@
     outline: #2196F3;
   }
 .client-dashboard {
-	width: 700px;
-	height: 500px;
+	width: 500px;
+	height: 300px;
 	background-image: url('https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg');
   background-size: 700px 500px;
   border: 3px solid black;
@@ -114,7 +114,7 @@
 
 .client-dashboard-content{
     width: 95%;
-    height: 80%;
+    height: 70%;
     display: none;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.6);
