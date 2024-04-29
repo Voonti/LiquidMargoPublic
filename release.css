@@ -1,13 +1,14 @@
 .client-dashboard {
 	width: 600px;
 	height: 300px;
-	background-image: url('https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg');
   background-size: 700px 500px;
   border: 3px solid black;
   position: absolute;
   top: 0;
   left: 0;
   cursor: pointer;
+  background-size: cover;
 }
 
 .client-dashboard-buttons{
