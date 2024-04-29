@@ -1,7 +1,7 @@
 const t=Object.freeze({Legendary:16746496,Upgraded:16711833,Heroic:3080447,Unique:0,Common:0}),e=Object.freeze({Critical:"critical",Error:"error",Warning:"warning",Info:"info"}),n=Object.freeze({Captcha:"Captcha"}),o=Object.freeze({Legendary:"legendary",Upgraded:"upgraded",Heroic:"heroic",Unique:"unique",Common:"common"}),a="div.captcha-layer.layer > div",i="body > div > div.captcha-layer.layer > div > div.content > div.inner-content > div > div.captcha__image > img",r="body > div > div.interface-layer.layer > div.bottom.positioner > div.battle-controller > div.battle-content > div.buttons-wrapper > div.button.green.auto-fight-btn.small",c="LiquidWait",l="captcha_web_hook",s="loot_web_hook",d="loots_sended",u="https://micc.garmory-cdn.cloud/obrazki/itemy//",h="https://p.turbosquid.com/ts-thumb/CZ/mRE7pE/TAoEtLS6/bot_7_100.9/jpg/1526754058/600x600/fit_q87/b088eb3c6419a0d139756995edc882d5b39783e6/bot_7_100.9.jpg";class g extends HTMLElement{constructor(){super(),this.assign=this.assign.bind(this),this.assign()}assign(){var t=this.attachShadow({mode:"open"}),e=document.createElement("style"),n=(e.textContent=this.styling(),document.createElement("div"));n.classList.add("client-toggle-button-wrapper"),n.innerHTML=this.component(),t.appendChild(e),t.appendChild(n)}component(){return`
           <div class="client-toggle-button-title">
             ${this.getAttribute("addon-title")}
-            <span class="client-toggle-button-tooltip">${this.getAttribute("tip")}</span>
+            <!--<span class="client-toggle-button-tooltip">${this.getAttribute("tip")}</span>-->
           </div>
           <label class="client-switch">
             <input id="client-toggle-button-${this.getAttribute("addon-title")}"  type="checkbox">
