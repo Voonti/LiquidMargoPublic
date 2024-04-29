@@ -45,17 +45,21 @@
         });
     }
 
-    function attachClient() {
+    async function attachClient() {
         const targetElement = document.querySelector("#GAME_CANVAS")
+        await new Promise(r => setTimeout(r, 200));
         if (targetElement) {
             appendHTML("https://raw.githubusercontent.com/Voonti/LiquidMargoPublic/develop/release.html");
             appendCSS("https://raw.githubusercontent.com/Voonti/LiquidMargoPublic/develop/release.css");
             appendJS("https://raw.githubusercontent.com/Voonti/LiquidMargoPublic/develop/release.js");
-
         } else {
             setTimeout(checkElement, 100);
         }
     }
 
-    attachClient()
+    async function preAttach(){
+        await attachClient()
+    }
+
+    preAttach()
 })();

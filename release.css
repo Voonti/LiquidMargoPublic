@@ -73,7 +73,7 @@
 }
 
 .client-dashboard-content::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2d2d2d, #4b4b5b);
+  background: linear-gradient(to bottom, #a2a2a2, #808080);
 }
 .client-start-button{
     width: 90px;
