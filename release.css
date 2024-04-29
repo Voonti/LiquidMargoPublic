@@ -44,7 +44,8 @@
     background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid #1b1b1b;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
 }
 
 .client-addons-sidebar{
@@ -55,6 +56,24 @@
     flex-direction: column;
     justify-content: right;
     flex-wrap: wrap;
+    height: 150%;
+}
+
+.client-dashboard-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.client-dashboard-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0d0c0c, #353535);
+  border: 1px solid black;
+}
+
+.client-dashboard-content::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #adadad, #adadad);
+}
+
+.client-dashboard-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #484848, #1e1e1e);
 }
 .client-start-button{
     width: 90px;
