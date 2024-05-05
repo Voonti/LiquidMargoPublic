@@ -75,6 +75,15 @@
 .client-dashboard-content::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #a2a2a2, #808080);
 }
+
+.client-exit-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
+}
 .client-start-button{
     width: 90px;
     height: 20px;
